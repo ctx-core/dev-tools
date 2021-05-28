@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 4.0.2
+
+### Patch Changes
+
+- fix: published files
+
 ## 4.0.1
 
 ### Patch Changes
