@@ -112,7 +112,7 @@ export function ${b_h_b_name}(ctx:${ctx_I_name}):B<${ctx_I_name}, '${b_h_name}'>
 		return {
 ${member_ts}
 		}
-	})
+	})(ctx)
 }
 		  `.trim()
 		}
