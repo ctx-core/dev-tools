@@ -1,0 +1,44 @@
+{
+	"name": "@ctx-core/dev-tools",
+	"version": "4.0.0",
+	"description": "ctx-core dev-tools",
+	"keywords": [
+		"ctx-core",
+		"dev-tools"
+	],
+	"homepage": "https://github.com/ctx-core/dev-tools#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/dev-tools/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/dev-tools/issues"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"bin": {
+		"generate_ctx_I_file": "bin/generate_ctx_I_file.js"
+	},
+	"scripts": {
+		"build": "npm run clean && npm run compile",
+		"clean": "rm -f tsconfig.tsbuildinfo",
+		"compile": "./node_modules/.bin/tsc -b .",
+		"exec": "$@",
+		"prepublishOnly": "npm run compile"
+	},
+	"dependencies": {
+		"@ctx-core/cli-args": "workspace:^7.6.0",
+		"esm": "^3.2.25",
+		"globby": "^11.0.3"
+	},
+	"devDependencies": {
+		"typescript": "^4.3.2"
+	},
+	"publishConfig": {
+		"access": "public",
+		"cache": "~/.npm"
+	}
+}
