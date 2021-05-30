@@ -1,5 +1,18 @@
 # @ctx-core/dev-tools
 
+## 5.0.0
+
+### Major Changes
+
+- \$ suffix for stores
+- \_ suffix for factory functions
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@8.0.0
+
 ## 4.0.2
 
 ### Patch Changes

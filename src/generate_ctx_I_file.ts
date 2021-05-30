@@ -21,33 +21,34 @@ export async function generate_ctx_I_file(
 	const pkg_basename = sanitize(basename(name))
 	const src_path = join(project_path, src_relative_path)
 	const ctx_I_name = `${pkg_basename}_ctx_I`
+	const Ctx_name = `${pkg_basename}_Ctx`
 	const b_h_name = `${pkg_basename}_b_h`
 	const b_h_b_name = `${pkg_basename}_b_h_b`
 	const b_h_T_name = `${pkg_basename}_b_h_T`
-	const unfiltered_b_path_a1 = await globby([
+	const unfiltered_b_path_a = await globby([
 		`${src_path}/**/*_b.ts`,
 		`${src_path}/**/*_be.ts`,
 	])
-	const unfiltered_b_name_a1 = unfiltered_b_path_a1.map(b_path=>
+	const unfiltered_b_name_a = unfiltered_b_path_a.map(b_path=>
 		sanitize(basename(b_path, '.ts'))
 	)
-	const unfiltered_base_name_a1 = unfiltered_b_name_a1.map(b_name=>
+	const unfiltered_base_name_a = unfiltered_b_name_a.map(b_name=>
 		sanitize(strip_to_base_name(b_name))
 	)
-	const exclude_idx_a1 = unfiltered_base_name_a1.reduce<number[]>((memo, base_name, idx)=>{
+	const exclude_idx_a = unfiltered_base_name_a.reduce<number[]>((memo, base_name, idx)=>{
 		if (~exclude.indexOf(base_name)) {
 			memo.push(idx)
 		}
 		return memo
 	}, [])
-	const filter_fn = (_:any, idx:number)=>!~exclude_idx_a1.indexOf(idx)
-	const b_path_a1 = unfiltered_b_path_a1.filter(filter_fn)
-	const b_name_a1 = unfiltered_b_name_a1.filter(filter_fn)
-	const base_name_a1 = unfiltered_base_name_a1.filter(filter_fn)
-	const T_name_a1 = base_name_a1.map(base_name=>
+	const filter_fn = (_:any, idx:number)=>!~exclude_idx_a.indexOf(idx)
+	const b_path_a = unfiltered_b_path_a.filter(filter_fn)
+	const b_name_a = unfiltered_b_name_a.filter(filter_fn)
+	const base_name_a = unfiltered_base_name_a.filter(filter_fn)
+	const T_name_a = base_name_a.map(base_name=>
 		`${base_name}_T`
 	)
-	const import_path_a1 = b_path_a1.map(b_path=>{
+	const import_path_a = b_path_a.map(b_path=>{
 		const relative_path = relative(src_path, b_path)
 		const in_dirname = dirname(relative_path)
 		const out_dirname =
@@ -68,7 +69,8 @@ export async function generate_ctx_I_file(
 			`${src_path}/${ctx_I_name}.generated.ts`,
 			[
 				frontmatter_ts_fn(),
-				`import { _b } from '@ctx-core/object'`,
+				`import { be_ } from '@ctx-core/object'`,
+				`import type { ${Ctx_name} } from './${Ctx_name}'`,
 				import_ts_fn(),
 				export_generated_ctx_I_fn(),
 				export_b_h_t_fn(),
@@ -83,16 +85,16 @@ export async function generate_ctx_I_file(
 			].join('\n')
 		}
 		function import_ts_fn() {
-			return import_path_a1.map((import_path, idx)=>{
+			return import_path_a.map((import_path, idx)=>{
 				return [
-					`import type { ${T_name_a1[idx]} } from '${import_path}'`,
-					`import { ${b_name_a1[idx]} } from '${import_path}'`
+					`import type { ${T_name_a[idx]} } from '${import_path}'`,
+					`import { ${b_name_a[idx]} } from '${import_path}'`
 				].join('\n')
 			}).join('\n')
 		}
 		function export_generated_ctx_I_fn() {
-			const member_ts = base_name_a1.map((base_name, idx)=>{
-				return `\t${base_name}?:${T_name_a1[idx]}`
+			const member_ts = base_name_a.map((base_name, idx)=>{
+				return `\t${base_name}?:${T_name_a[idx]}`
 			}).join('\n')
 			return `
 export interface ${ctx_I_name} {
@@ -102,12 +104,12 @@ ${member_ts}
 		  `.trim()
 		}
 		function export_b_h_b_fn() {
-			const member_ts = base_name_a1.map((base_name, idx)=>{
-				return `\t\t\tget ${base_name}() { return ${b_name_a1[idx]}(ctx) }`
+			const member_ts = base_name_a.map((base_name, idx)=>{
+				return `\t\t\tget ${base_name}() { return ${b_name_a[idx]}(ctx) }`
 			}).join(',\n')
 			return `
-export function ${b_h_b_name}(ctx:${ctx_I_name}):${b_h_T_name} {
-	return _b<${ctx_I_name}, '${b_h_name}'>('${b_h_name}', ()=>{
+export function ${b_h_b_name}(ctx:${Ctx_name}):${b_h_T_name} {
+	return be_<${Ctx_name}, '${b_h_name}'>('${b_h_name}', ()=>{
 		return {
 ${member_ts}
 		}
@@ -117,8 +119,8 @@ ${member_ts}
 		}
 	}
 	function export_b_h_t_fn() {
-		const member_ts = base_name_a1.map((base_name, idx)=>{
-			return `\tget ${base_name}():${T_name_a1[idx]}`
+		const member_ts = base_name_a.map((base_name, idx)=>{
+			return `\tget ${base_name}():${T_name_a[idx]}`
 		}).join('\n')
 		return `
 export interface ${b_h_T_name} {
