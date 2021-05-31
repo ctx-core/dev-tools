@@ -1,10 +1,16 @@
 # @ctx-core/dev-tools
 
+## 5.0.3
+
+### Patch Changes
+
+- fix: generate_ctx_I_file: strip_to_base_name
+
 ## 5.0.2
 
 ### Patch Changes
 
-- fix: generate*ctx_I_file: src/\**/\_\_b.ts glob
+- fix: generate\*ctx_I_file: src/\*\*/\_\_b.ts glob
 
 ## 5.0.1
 

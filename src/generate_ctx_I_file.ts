@@ -59,7 +59,7 @@ export async function generate_ctx_I_file(
 	})
 	await writefile_generated_ctx_I()
 	function strip_to_base_name(b_name:string) {
-		return b_name.replace(/((be_)|(_be))$/, '')
+		return b_name.replace(/((_b)|(_be))$/, '')
 	}
 	function sanitize(unsanitized_name:string) {
 		return unsanitized_name.replace(/-/g, '_')
