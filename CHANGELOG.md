@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 5.0.2
+
+### Patch Changes
+
+- fix: generate*ctx_I_file: src/\**/\_\_b.ts glob
+
 ## 5.0.1
 
 ### Patch Changes

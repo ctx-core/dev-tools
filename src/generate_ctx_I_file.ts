@@ -26,7 +26,7 @@ export async function generate_ctx_I_file(
 	const b_h_b_name = `${pkg_basename}_b_h_b`
 	const b_h_T_name = `${pkg_basename}_b_h_T`
 	const unfiltered_b_path_a = await globby([
-		`${src_path}/**/*be_.ts`,
+		`${src_path}/**/*_b.ts`,
 		`${src_path}/**/*_be.ts`,
 	])
 	const unfiltered_b_name_a = unfiltered_b_path_a.map(b_path=>
