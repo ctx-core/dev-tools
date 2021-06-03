@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 5.0.4
+
+### Patch Changes
+
+- fix: generate_ctx_I_file: dots (.) are replaced by underscore
+
 ## 5.0.3
 
 ### Patch Changes
