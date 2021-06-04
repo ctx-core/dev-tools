@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 5.1.1
+
+### Patch Changes
+
+- fix: generate_ctx_I_file: no b_h_b: remove extra spaces
+
 ## 5.1.0
 
 ### Minor Changes

@@ -75,8 +75,7 @@ export async function generate_ctx_I_file(
 				`import type { ${Ctx_name} } from './${Ctx_name}'`,
 				import_ts_fn(),
 				export_generated_ctx_I_fn(),
-				b_h_b ? export_b_h_t_fn() : null,
-				b_h_b ? export_b_h_b_fn() : null,
+				...(b_h_b ? [export_b_h_t_fn(), export_b_h_b_fn()] : [])
 			].join('\n')
 		)
 		function frontmatter_ts_fn() {
