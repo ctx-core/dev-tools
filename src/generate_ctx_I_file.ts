@@ -71,8 +71,10 @@ export async function generate_ctx_I_file(
 			`${src_path}/${ctx_I_name}.generated.ts`,
 			[
 				frontmatter_ts_fn(),
-				`import { be_ } from '@ctx-core/object'`,
-				`import type { ${Ctx_name} } from './${Ctx_name}'`,
+				...(b_h_b ? [
+					`import { be_ } from '@ctx-core/object'`,
+					`import type { ${Ctx_name} } from './${Ctx_name}'`,
+				] : []),
 				import_ts_fn(),
 				export_generated_ctx_I_fn(),
 				...(b_h_b ? [export_b_h_t_fn(), export_b_h_b_fn()] : [])
@@ -89,7 +91,7 @@ export async function generate_ctx_I_file(
 			return import_path_a.map((import_path, idx)=>{
 				return [
 					`import type { ${T_name_a[idx]} } from '${import_path}'`,
-					`import { ${b_name_a[idx]} } from '${import_path}'`
+					...(b_h_b ? [`import { ${b_name_a[idx]} } from '${import_path}'`] : [])
 				].join('\n')
 			}).join('\n')
 		}
