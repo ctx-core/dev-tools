@@ -5,6 +5,7 @@ import { promisify } from 'util'
 const writefile_p = promisify(writeFile)
 export interface generate_ctx_I_file_opts_I {
 	exclude?:string[]
+	b_h_b?:boolean
 	project_path?:string
 	src_relative_path?:string
 }
@@ -14,6 +15,7 @@ export async function generate_ctx_I_file(
 	const project_path = opts?.project_path || '.'
 	const src_relative_path = opts?.src_relative_path || 'src'
 	const exclude = opts?.exclude || []
+	const b_h_b = opts?.b_h_b || false
 	const pkg_json_buffer = await promisify(readFile)(`${project_path}/package.json`)
 	const pkg_json = pkg_json_buffer.toString()
 	const pkg = JSON.parse(pkg_json)
@@ -73,8 +75,8 @@ export async function generate_ctx_I_file(
 				`import type { ${Ctx_name} } from './${Ctx_name}'`,
 				import_ts_fn(),
 				export_generated_ctx_I_fn(),
-				export_b_h_t_fn(),
-				export_b_h_b_fn(),
+				b_h_b ? export_b_h_t_fn() : null,
+				b_h_b ? export_b_h_b_fn() : null,
 			].join('\n')
 		)
 		function frontmatter_ts_fn() {
@@ -96,10 +98,10 @@ export async function generate_ctx_I_file(
 			const member_ts = base_name_a.map((base_name, idx)=>{
 				return `\t${base_name}?:${T_name_a[idx]}`
 			}).join('\n')
+			const b_h_b_ts = b_h_b ? `\n\t${b_h_name}?:${b_h_T_name}` : ''
 			return `
 export interface ${ctx_I_name} {
-${member_ts}
-	${b_h_name}?:${b_h_T_name}
+${member_ts}${b_h_b_ts}
 }
 		  `.trim()
 		}

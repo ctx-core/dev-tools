@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 5.1.0
+
+### Minor Changes
+
+- b_h_b code generation is optional
+
 ## 5.0.4
 
 ### Patch Changes
