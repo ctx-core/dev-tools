@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 5.1.3
+
+### Patch Changes
+
+- fix: build: clean up old build files in dist
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@8.0.14
+
 ## 5.1.2
 
 ### Patch Changes
