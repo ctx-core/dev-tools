@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 5.1.5
+
+### Patch Changes
+
+- update dependencies
+
 ## 5.1.4
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "5.1.4",
+	"version": "5.1.5",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -30,7 +30,7 @@
 		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^8.0.20",
+		"@ctx-core/cli-args": "workspace:^8.0.21",
 		"esm": "^3.2.25",
 		"globby": "^11.0.3"
 	},
