@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 5.1.6
+
+### Patch Changes
+
+- fix: B: inferred type issue
+
 ## 5.1.5
 
 ### Patch Changes

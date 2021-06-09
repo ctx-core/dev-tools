@@ -72,7 +72,7 @@ export async function generate_ctx_I_file(
 			[
 				frontmatter_ts_fn(),
 				...(b_h_b ? [
-					`import { be_ } from '@ctx-core/object'`,
+					`import { B, be_ } from '@ctx-core/object'`,
 					`import type { ${Ctx_name} } from './${Ctx_name}'`,
 				] : []),
 				import_ts_fn(),
