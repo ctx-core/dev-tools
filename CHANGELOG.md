@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 5.1.7
+
+### Patch Changes
+
+- generate_ctx_I_file: strip \_rc_be,\_rc_b suffix
+
 ## 5.1.6
 
 ### Patch Changes
