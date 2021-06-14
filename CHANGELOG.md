@@ -1,5 +1,16 @@
 # @ctx-core/dev-tools
 
+## 6.0.0
+
+### Major Changes
+
+- move from dist to src directory
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@9.0.0
+
 ## 5.1.8
 
 ### Patch Changes
