@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 6.0.1
+
+### Patch Changes
+
+- globby: ^11.0.3 -> ^11.0.4
+
 ## 6.0.0
 
 ### Major Changes
