@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 6.0.7
+
+### Patch Changes
+
+- fix: deploying \*.js files
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@9.0.8
+
 ## 6.0.6
 
 ### Patch Changes

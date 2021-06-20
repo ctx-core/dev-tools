@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "6.0.6",
+	"version": "6.0.7",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -30,7 +30,7 @@
 		"prepare": "npm run clean && npm run compile"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^9.0.7",
+		"@ctx-core/cli-args": "workspace:^9.0.8",
 		"esm": "^3.2.25",
 		"globby": "^11.0.4"
 	},
