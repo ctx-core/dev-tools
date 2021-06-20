@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 6.0.4
+
+### Patch Changes
+
+- fix: npm run clean
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@9.0.5
+
 ## 6.0.3
 
 ### Patch Changes
