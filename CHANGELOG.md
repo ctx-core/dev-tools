@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 6.0.8
+
+### Patch Changes
+
+- "prepublishOnly": "npm run clean && npm run compile"
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@9.0.9
+
 ## 6.0.7
 
 ### Patch Changes
