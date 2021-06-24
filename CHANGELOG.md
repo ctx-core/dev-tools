@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 6.0.9
+
+### Patch Changes
+
+- tsconfig.json: "lib": ["dom", "ESNext"]
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@9.0.11
+
 ## 6.0.8
 
 ### Patch Changes
