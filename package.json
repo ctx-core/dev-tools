@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "6.0.11",
+	"version": "6.0.12",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -16,9 +16,9 @@
 	},
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
-	"main": "./src/index.js",
-	"module": "./src/index.js",
-	"types": "./src/index.d.ts",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"bin": {
 		"generate_ctx_I_file": "bin/generate_ctx_I_file.js"
 	},
@@ -27,10 +27,10 @@
 		"clean": "rm -f tsconfig.tsbuildinfo && rm -f src/**/*.js && rm -f src/**/*.d.ts && rm -f src/**/*.map",
 		"compile": "./node_modules/.bin/tsc -b .",
 		"exec": "$@",
-		"prepublishOnly": "npm run clean && npm run compile"
+		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^9.0.15",
+		"@ctx-core/cli-args": "workspace:^9.0.16",
 		"esm": "^3.2.25",
 		"globby": "^11.0.4"
 	},
