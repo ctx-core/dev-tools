@@ -1,5 +1,21 @@
 # @ctx-core/dev-tools
 
+## 6.0.14
+
+### Patch Changes
+
+- update dependencies
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@9.0.19
+
+## 6.0.13
+
+### Patch Changes
+
+- 8e0a4324f: update dependencies
+- Updated dependencies [8e0a4324f]
+  - @ctx-core/cli-args@9.0.18
+
 ## 6.0.12
 
 ### Patch Changes
