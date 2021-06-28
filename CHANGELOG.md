@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 6.0.15
+
+### Patch Changes
+
+- fix: generate*ctx_I_file: params_r*
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@9.0.20
+
 ## 6.0.14
 
 ### Patch Changes
