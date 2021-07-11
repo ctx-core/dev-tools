@@ -30,7 +30,7 @@
 		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^9.0.28",
+		"@ctx-core/cli-args": "workspace:^9.0.29",
 		"esm": "^3.2.25",
 		"globby": "^11.0.4"
 	},
