@@ -9,7 +9,7 @@ export interface generate_ctx_I_file_opts_I {
 }
 export async function generate_ctx_I_file(
 	opts:generate_ctx_I_file_opts_I = {}
-) {
+):Promise<void> {
 	const project_path = opts?.project_path || '.'
 	const src_relative_path = opts?.src_relative_path || 'src'
 	const exclude = opts?.exclude || []
