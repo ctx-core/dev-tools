@@ -1,8 +1,6 @@
 import globby from 'globby'
-import { readFile, writeFile } from 'fs'
+import { readFile, writeFile } from 'fs/promises'
 import { basename, dirname, join, relative } from 'path'
-import { promisify } from 'util'
-const writefile_p = promisify(writeFile)
 export interface generate_ctx_I_file_opts_I {
 	exclude?:string[]
 	b_h_b?:boolean
@@ -16,7 +14,7 @@ export async function generate_ctx_I_file(
 	const src_relative_path = opts?.src_relative_path || 'src'
 	const exclude = opts?.exclude || []
 	const b_h_b = opts?.b_h_b || false
-	const pkg_json_buffer = await promisify(readFile)(`${project_path}/package.json`)
+	const pkg_json_buffer = await readFile(`${project_path}/package.json`)
 	const pkg_json = pkg_json_buffer.toString()
 	const pkg = JSON.parse(pkg_json)
 	const { name } = pkg
@@ -67,7 +65,7 @@ export async function generate_ctx_I_file(
 		return unsanitized_name.replace(/[.-]/g, '_')
 	}
 	async function writefile_generated_ctx_I() {
-		await writefile_p(
+		await writeFile(
 			`${src_path}/${ctx_I_name}.generated.ts`,
 			[
 				frontmatter_ts_fn(),
