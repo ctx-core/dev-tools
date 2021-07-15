@@ -1,5 +1,15 @@
 # @ctx-core/dev-tools
 
+## 7.0.1
+
+### Patch Changes
+
+- 2a6971f80: fix: "type": "module"
+- fix: "type": "module"
+- Updated dependencies [2a6971f80]
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@10.0.1
+
 ## 7.0.0
 
 ### Major Changes
