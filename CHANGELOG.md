@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.0.8
+
+### Patch Changes
+
+- fix: index.cjs: module.exports = require('./index.js')
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@10.0.7
+
 ## 7.0.7
 
 ### Patch Changes
