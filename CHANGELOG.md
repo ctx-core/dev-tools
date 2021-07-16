@@ -1,5 +1,29 @@
 # @ctx-core/dev-tools
 
+## 7.0.7
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@10.0.6
+
+## 7.0.6
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@10.0.5
+
+## 7.0.5
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@10.0.4
+
 ## 7.0.4
 
 ### Patch Changes
