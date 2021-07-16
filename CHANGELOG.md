@@ -1,5 +1,21 @@
 # @ctx-core/dev-tools
 
+## 7.0.12
+
+### Patch Changes
+
+- fix: sourceMappingURL: "mapRoot": ""
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@10.0.11
+
+## 7.0.11
+
+### Patch Changes
+
+- tsconfig.json: "target": "es2019"
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@10.0.10
+
 ## 7.0.10
 
 ### Patch Changes
