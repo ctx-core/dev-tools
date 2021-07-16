@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.0.10
+
+### Patch Changes
+
+- fix: cjs: load as a Promise
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@10.0.9
+
 ## 7.0.9
 
 ### Patch Changes
