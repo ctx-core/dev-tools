@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.0.4
+
+### Patch Changes
+
+- support cjs & esm: + "exports"
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@10.0.3
+
 ## 7.0.3
 
 ### Patch Changes

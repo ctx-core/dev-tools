@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { param_r_ } from '@ctx-core/cli-args'
-import { generate_ctx_I_file } from '../dist/index.js'
+import { generate_ctx_I_file } from '../dist/index.mjs'
 const { exclude } = param_r_(process.argv.slice(2), {
 	exclude: '-e, --exclude',
 	b_h_b: '-b, --b_h_b'
