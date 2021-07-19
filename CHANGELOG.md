@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.0.14
+
+### Patch Changes
+
+- fix: "exports": "./package.json": "./package.json"
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@10.0.13
+
 ## 7.0.13
 
 ### Patch Changes
