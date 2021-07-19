@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "7.0.12",
+	"version": "7.0.13",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -22,7 +22,8 @@
 	"types": "./dist/index.d.ts",
 	"exports": {
 		"require": "./dist/index.cjs",
-		"import": "./dist/index.js"
+		"import": "./dist/index.js",
+		"package.json": "./package.json"
 	},
 	"bin": {
 		"generate_ctx_I_file": "bin/generate_ctx_I_file.mjs"
@@ -36,7 +37,7 @@
 		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^10.0.11",
+		"@ctx-core/cli-args": "workspace:^10.0.12",
 		"esm": "^3.2.25",
 		"globby": "^11.0.4"
 	},
