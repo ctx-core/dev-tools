@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 7.0.15
+
+### Patch Changes
+
+- globby: ^11.0.4 -> ^12.0.0
+
 ## 7.0.14
 
 ### Patch Changes

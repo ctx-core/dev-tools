@@ -1,4 +1,4 @@
-import globby from 'globby'
+import { globby } from 'globby'
 import { readFile, writeFile } from 'fs/promises'
 import { basename, dirname, join, relative } from 'path'
 export interface generate_ctx_I_file_opts_I {
