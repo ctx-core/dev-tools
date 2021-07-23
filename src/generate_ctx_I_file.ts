@@ -1,4 +1,4 @@
-import { globby } from 'globby'
+import { fdir } from 'fdir'
 import { readFile, writeFile } from 'fs/promises'
 import { basename, dirname, join, relative } from 'path'
 export interface generate_ctx_I_file_opts_I {
@@ -25,10 +25,12 @@ export async function generate_ctx_I_file(
 	const b_h_name = `${pkg_basename}_b_h`
 	const b_h_b_name = `${pkg_basename}_b_h_b`
 	const b_h_T_name = `${pkg_basename}_b_h_T`
-	const unfiltered_b_path_a = await globby([
-		`${src_path}/**/*_b.ts`,
-		`${src_path}/**/*_be.ts`,
-	])
+	const unfiltered_b_path_a = (
+		await new fdir()
+			.glob('**/*_b.ts', '**/*_be.ts')
+			.crawl(src_path)
+			.withPromise()
+	) as string[]
 	const unfiltered_b_name_a = unfiltered_b_path_a.map(b_path=>
 		sanitize(basename(b_path, '.ts'))
 	)

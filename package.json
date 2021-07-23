@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "7.0.15",
+	"version": "7.0.16",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -41,7 +41,8 @@
 	"dependencies": {
 		"@ctx-core/cli-args": "workspace:^10.0.13",
 		"esm": "^3.2.25",
-		"globby": "^12.0.0"
+		"fdir": "^5.1.0",
+		"picomatch": "^2.3.0"
 	},
 	"devDependencies": {
 		"typescript": "^4.3.5"
