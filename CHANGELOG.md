@@ -1,5 +1,17 @@
 # @ctx-core/dev-tools
 
+## 7.0.18
+
+### Patch Changes
+
+- fix: \*\_ctx_I.generated
+
+## 7.0.17
+
+### Patch Changes
+
+- fix: generate_ctx_I_file: full path
+
 ## 7.0.16
 
 ### Patch Changes

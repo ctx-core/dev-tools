@@ -28,7 +28,8 @@ export async function generate_ctx_I_file(
 	const unfiltered_b_path_a = (
 		await new fdir()
 			.glob('**/*_b.ts', '**/*_be.ts')
-			.crawl(src_path)
+			.withFullPaths()
+			.crawl(process.cwd())
 			.withPromise()
 	) as string[]
 	const unfiltered_b_name_a = unfiltered_b_path_a.map(b_path=>
