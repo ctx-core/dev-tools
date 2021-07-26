@@ -8,4 +8,4 @@ const { exclude } = param_r_(process.argv.slice(2), {
 	exclude: undefined,
 	b_h_b: false,
 })
-generate_ctx_I_file({ exclude: exclude ? exclude.split(',') : [] }).then()
+await generate_ctx_I_file({ exclude: exclude ? exclude.split(',') : [] })
