@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "7.0.18",
+	"version": "7.0.19",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -39,7 +39,7 @@
 		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^10.0.13",
+		"@ctx-core/cli-args": "workspace:^10.0.14",
 		"esm": "^3.2.25",
 		"fdir": "^5.1.0",
 		"picomatch": "^2.3.0"
