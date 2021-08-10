@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 7.0.20
+
+### Patch Changes
+
+- generate_ctx_I_file: sorting
+
 ## 7.0.19
 
 ### Patch Changes
