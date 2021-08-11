@@ -9,7 +9,7 @@ export interface generate_ctx_I_file_opts_I {
 }
 export async function generate_ctx_I_file(
 	opts:generate_ctx_I_file_opts_I = {}
-):Promise<void> {
+):Promise<string> {
 	const project_path = opts?.project_path || '.'
 	const src_relative_path = opts?.src_relative_path || 'src'
 	const exclude = opts?.exclude || []
@@ -21,6 +21,7 @@ export async function generate_ctx_I_file(
 	const pkg_basename = sanitize(basename(name))
 	const src_path = join(project_path, src_relative_path)
 	const ctx_I_name = `${pkg_basename}_ctx_I`
+	const ctx_I_path = `${src_path}/${ctx_I_name}.generated.ts`
 	const Ctx_name = `${pkg_basename}_Ctx`
 	const b_h_name = `${pkg_basename}_b_h`
 	const b_h_b_name = `${pkg_basename}_b_h_b`
@@ -61,6 +62,7 @@ export async function generate_ctx_I_file(
 		return `${out_dirname}/${sanitize(basename(relative_path, '.ts'))}`
 	})
 	await writefile_generated_ctx_I()
+	return ctx_I_path
 	function strip_to_base_name(b_name:string) {
 		return b_name.replace(/((_rc_b)|(_rc_be)|(_b)|(_be))$/, '')
 	}
@@ -69,7 +71,7 @@ export async function generate_ctx_I_file(
 	}
 	async function writefile_generated_ctx_I() {
 		await writeFile(
-			`${src_path}/${ctx_I_name}.generated.ts`,
+			ctx_I_path,
 			[
 				frontmatter_ts_fn(),
 				...(b_h_b ? [

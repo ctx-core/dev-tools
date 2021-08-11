@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 7.1.0
+
+### Minor Changes
+
+- generate_ctx_I_file: prints the path of the generated [package_name]\_ctx_I.generated.ts file
+
 ## 7.0.20
 
 ### Patch Changes
