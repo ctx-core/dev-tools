@@ -51,7 +51,7 @@ export async function generate_ctx_I_file(
 	const base_name_a = unfiltered_base_name_a.filter(filter_fn)
 	const T_name_a = base_name_a.map(base_name=>
 		`${base_name}_T`
-	).sort()
+	)
 	const import_path_a = b_path_a.map(b_path=>{
 		const relative_path = relative(src_path, b_path)
 		const in_dirname = dirname(relative_path)

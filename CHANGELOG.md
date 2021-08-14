@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 7.1.1
+
+### Patch Changes
+
+- fix: generate_ctx_I_file: import type name mismatch from module name
+
 ## 7.1.0
 
 ### Minor Changes
