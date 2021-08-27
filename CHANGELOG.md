@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.1.2
+
+### Patch Changes
+
+- typescript: ^4.3.5 -> ^4.4.2
+- Updated dependencies [undefined]
+  - @ctx-core/cli-args@10.0.18
+
 ## 7.1.1
 
 ### Patch Changes
