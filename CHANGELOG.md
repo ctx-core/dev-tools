@@ -1,5 +1,20 @@
 # @ctx-core/dev-tools
 
+## 7.2.0
+
+### Minor Changes
+
+- engines*node* from node*version*
+
+### Patch Changes
+
+- compile using swc
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.0
+
 ## 7.1.4
 
 ### Patch Changes

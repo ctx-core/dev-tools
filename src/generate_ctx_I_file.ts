@@ -2,7 +2,7 @@ import { fdir } from 'fdir'
 import { readFile, writeFile } from 'fs/promises'
 import { basename, dirname, join, relative } from 'path'
 export interface generate_ctx_I_file_opts_I {
-	exclude?:string[]
+	exclude_a?:string[]
 	b_h_b?:boolean
 	project_path?:string
 	src_relative_path?:string
@@ -12,8 +12,8 @@ export async function generate_ctx_I_file(
 ):Promise<string> {
 	const project_path = opts?.project_path || '.'
 	const src_relative_path = opts?.src_relative_path || 'src'
-	const exclude = opts?.exclude || []
-	const b_h_b = opts?.b_h_b || false
+	const exclude_a = opts?.exclude_a || []
+	const b_h_b = !!opts?.b_h_b
 	const pkg_json_buffer = await readFile(`${project_path}/package.json`)
 	const pkg_json = pkg_json_buffer.toString()
 	const pkg = JSON.parse(pkg_json)
@@ -40,7 +40,7 @@ export async function generate_ctx_I_file(
 		sanitize(strip_to_base_name(b_name))
 	)
 	const exclude_idx_a = unfiltered_base_name_a.reduce<number[]>((memo, base_name, idx)=>{
-		if (~exclude.indexOf(base_name)) {
+		if (~exclude_a.indexOf(base_name)) {
 			memo.push(idx)
 		}
 		return memo
