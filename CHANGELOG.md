@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.1
+
+### Patch Changes
+
+- @swc/core: ^1.2.107 -> ^1.2.108
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.1
+
 ## 7.2.0
 
 ### Minor Changes
