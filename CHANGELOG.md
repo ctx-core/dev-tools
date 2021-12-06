@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.9
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.10
+
 ## 7.2.8
 
 ### Patch Changes
