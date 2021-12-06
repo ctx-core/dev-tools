@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "7.2.6",
+	"version": "7.2.7",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -38,13 +38,13 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^11.0.6",
+		"@ctx-core/cli-args": "workspace:^11.0.7",
 		"fdir": "^5.1.0",
 		"picomatch": "^2.3.0"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.52",
-		"@swc/core": "^1.2.117",
+		"@swc/core": "^1.2.118",
 		"typescript": "next"
 	},
 	"publishConfig": {
