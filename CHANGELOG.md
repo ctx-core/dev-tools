@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.13
+
+### Patch Changes
+
+- fix: tsconfig.json: "rootDir": "."
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.14
+
 ## 7.2.12
 
 ### Patch Changes
