@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.11
+
+### Patch Changes
+
+- package.json: svelte: ./dist/index.js
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.12
+
 ## 7.2.10
 
 ### Patch Changes
