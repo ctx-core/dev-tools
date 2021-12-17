@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.17
+
+### Patch Changes
+
+- tsconfig.json: "target": "ES2021"
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.18
+
 ## 7.2.16
 
 ### Patch Changes
