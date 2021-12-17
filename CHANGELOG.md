@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.18
+
+### Patch Changes
+
+- fix: error TS6059: \* is not under 'rootDir': package.json: types: ./dist/index.d.ts
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.19
+
 ## 7.2.17
 
 ### Patch Changes
