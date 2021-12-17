@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "7.2.15",
+	"version": "7.2.16",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -17,7 +17,7 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
-	"types": "./dist/index.d.ts",
+	"types": "./src/index.ts",
 	"exports": {
 		".": {
 			"import": "./dist/index.js"
@@ -38,7 +38,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^11.0.16",
+		"@ctx-core/cli-args": "workspace:^11.0.17",
 		"fdir": "^5.1.0",
 		"picomatch": "^2.3.0"
 	},

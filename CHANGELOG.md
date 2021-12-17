@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.16
+
+### Patch Changes
+
+- package.json: "types": "./src/index.ts": better editing experience
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.17
+
 ## 7.2.15
 
 ### Patch Changes
