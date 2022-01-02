@@ -40,7 +40,7 @@
 	"dependencies": {
 		"@ctx-core/cli-args": "workspace:^11.0.19",
 		"fdir": "^5.1.0",
-		"picomatch": "^2.3.0"
+		"picomatch": "^2.3.1"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",
