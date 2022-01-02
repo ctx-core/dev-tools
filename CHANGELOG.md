@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 7.2.19
+
+### Patch Changes
+
+- .js + .d.ts instead of .ts
+
 ## 7.2.18
 
 ### Patch Changes
