@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.20
+
+### Patch Changes
+
+- version bump
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.21
+
 ## 7.2.19
 
 ### Patch Changes
