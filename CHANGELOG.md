@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.22
+
+### Patch Changes
+
+- sideEffects = false
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.23
+
 ## 7.2.21
 
 ### Patch Changes

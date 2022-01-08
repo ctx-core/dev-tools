@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "7.2.21",
+	"version": "7.2.22",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -38,7 +38,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^11.0.22",
+		"@ctx-core/cli-args": "workspace:^11.0.23",
 		"fdir": "^5.1.0",
 		"picomatch": "^2.3.1"
 	},
@@ -52,5 +52,6 @@
 		"access": "public",
 		"cache": "~/.npm"
 	},
-	"svelte": "./lib/index.js"
+	"svelte": "./lib/index.js",
+	"sideEffects": false
 }
