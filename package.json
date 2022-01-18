@@ -39,7 +39,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/cli-args": "workspace:^11.0.23",
-		"fdir": "^5.1.0",
+		"fdir": "^5.2.0",
 		"picomatch": "^2.3.1"
 	},
 	"devDependencies": {
