@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "7.2.23",
+	"version": "7.2.24",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -38,7 +38,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "^11.0.26",
+		"@ctx-core/cli-args": "^11.0.27",
 		"fdir": "^5.2.0",
 		"picomatch": "^2.3.1"
 	},
