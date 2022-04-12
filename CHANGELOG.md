@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.26
+
+### Patch Changes
+
+- fix: @ctx-core/\* dependencies
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.29
+
 ## 7.2.25
 
 ### Patch Changes
