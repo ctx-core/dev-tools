@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.25
+
+### Patch Changes
+
+- package.json: exports: update
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.28
+
 ## 7.2.24
 
 ### Patch Changes
