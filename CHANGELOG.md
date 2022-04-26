@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 7.2.28
+
+### Patch Changes
+
+- @ctx-core/function: 20.7.1
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.32
+
 ## 7.2.27
 
 ### Patch Changes
