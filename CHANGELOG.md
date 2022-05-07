@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 7.2.31
+
+### Patch Changes
+
+- update dependencies
+
 ## 7.2.30
 
 ### Patch Changes
