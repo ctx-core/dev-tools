@@ -36,13 +36,13 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "^11.0.37",
+		"@ctx-core/cli-args": "^11.0.39",
 		"fdir": "^5.2.0",
 		"picomatch": "^2.3.1"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.57",
-		"@swc/core": "^1.2.189",
+		"@swc/core": "^1.2.192",
 		"rimraf": "^3.0.2",
 		"typescript": "next"
 	},
