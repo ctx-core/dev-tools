@@ -36,7 +36,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "^11.0.39",
+		"@ctx-core/cli-args": "^11.0.41",
 		"fdir": "^5.2.0",
 		"picomatch": "^2.3.1"
 	},
