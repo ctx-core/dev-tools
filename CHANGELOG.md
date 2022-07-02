@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.0.0
+
+### Major Changes
+
+- - generate_ctx_I_file
+
 ## 7.2.33
 
 ### Patch Changes
