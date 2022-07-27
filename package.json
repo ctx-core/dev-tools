@@ -33,7 +33,7 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "^11.0.44",
+		"@ctx-core/cli-args": "^11.0.45",
 		"fdir": "^5.2.0",
 		"picomatch": "^2.3.1"
 	},
