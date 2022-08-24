@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "8.1.0",
+	"version": "8.1.1",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -37,8 +37,8 @@
 	},
 	"dependencies": {
 		"@ctx-core/cli-args": "^11.0.47",
-		"@ctx-core/dir": "workspace:^8.1.1",
-		"@ctx-core/queue": "workspace:^7.3.1",
+		"@ctx-core/dir": "^8.1.1",
+		"@ctx-core/queue": "^7.3.1",
 		"glob-stream": "^7.0.0",
 		"tsx": "^3.8.2"
 	},

@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.1
+
+### Patch Changes
+
+- package.json: fix: dependecies
+
 ## 8.1.0
 
 ### Minor Changes
