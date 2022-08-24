@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.0
+
+### Minor Changes
+
+- - generate-index-ts
+
 ## 8.0.0
 
 ### Major Changes

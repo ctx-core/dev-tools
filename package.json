@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "8.0.0",
+	"version": "8.1.0",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -19,6 +19,9 @@
 	"type": "module",
 	"types": "./src/index.d.ts",
 	"svelte": "./src/index.js",
+	"bin": {
+		"generate-index-ts": "./bin/generate-index-ts/index.sh"
+	},
 	"exports": {
 		".": "./src/index.js",
 		"./package.json": "./package.json"
@@ -34,14 +37,16 @@
 	},
 	"dependencies": {
 		"@ctx-core/cli-args": "^11.0.47",
-		"fdir": "^5.2.0",
-		"picomatch": "^2.3.1"
+		"@ctx-core/dir": "workspace:^8.1.1",
+		"@ctx-core/queue": "workspace:^7.3.1",
+		"glob-stream": "^7.0.0",
+		"tsx": "^3.8.2"
 	},
 	"devDependencies": {
+		"@types/glob-stream": "^6.1.1",
 		"c8": "^7.12.0",
 		"check-dts": "^0.6.7",
 		"tslib": "^2.4.0",
-		"tsx": "^3.8.2",
 		"typescript": "next",
 		"uvu": "^0.5.6"
 	},
