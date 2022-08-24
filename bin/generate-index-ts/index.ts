@@ -34,11 +34,11 @@ async function main() {
 	async function _main() {
 		let svelte_imported = false
 		await new Promise(ret=>{
-			const proc = spawn(
+			const ls = spawn(
 				'ls', ['-1'], { cwd: dir_path }
 			).on('close', ()=>ret(null))
 			readline.createInterface({
-				input: proc.stdout
+				input: ls.stdout
 			}).on('line', path=>{
 				queue.add(async ()=>{
 					const stat = await fs.stat(path)
