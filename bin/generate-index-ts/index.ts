@@ -15,12 +15,14 @@ Options:
 -d, --dir    directory containing index.ts
 -h, --help   this help message'
   `.trim()
-chdir(process.env.CWD || process.cwd(), main).then()
+if (params.help) {
+	console.info(cli_help_())
+	process.exit(0)
+}
+const dir_path = params.dir_path_a?.[0]
+if (!dir_path) throw `-d, --dir is missing`
+chdir(dir_path, main).then()
 async function main() {
-	if (params.help) {
-		console.info(cli_help_())
-		return
-	}
 	await _main()
 	async function _main() {
 		let svelte_imported = false

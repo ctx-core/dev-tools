@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.2
+
+### Patch Changes
+
+- generate-index-ts: -d, --dir: fix: chdir
+
 ## 8.1.1
 
 ### Patch Changes
