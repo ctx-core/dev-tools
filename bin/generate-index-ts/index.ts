@@ -1,8 +1,10 @@
 import { param_r_ } from '@ctx-core/cli-args'
 import { chdir } from '@ctx-core/dir'
-import fs from 'fs'
-import glob_stream from 'glob-stream'
+import { queue_ } from '@ctx-core/queue'
+import { spawn } from 'child_process'
+import fs from 'fs/promises'
 import { basename as basename_, extname as extname_ } from 'path'
+import * as readline from 'readline/promises'
 const params = param_r_(process.argv.slice(2), {
 	dir_path_a: '-d, --dir',
 	help: '-h, --help',
@@ -23,14 +25,23 @@ const dir_path = params.dir_path_a?.[0]
 if (!dir_path) throw `-d, --dir is missing`
 chdir(dir_path, main).then()
 async function main() {
-	await _main()
+	const queue = queue_(1)
+	try {
+		await _main()
+	} finally {
+		await queue.close()
+	}
 	async function _main() {
 		let svelte_imported = false
 		await new Promise(ret=>{
-			glob_stream('*')
-				.on('data', ($:glob_stream.Entry)=>{
-					const { path } = $
-					const stat = fs.statSync(path)
+			const proc = spawn(
+				'ls', ['-1'], { cwd: dir_path }
+			).on('close', ()=>ret(null))
+			readline.createInterface({
+				input: proc.stdout
+			}).on('line', path=>{
+				queue.add(async ()=>{
+					const stat = await fs.stat(path)
 					const basename = basename_(path)
 					if (stat.isDirectory()) {
 						console.info(`export * from './${basename}'`)
@@ -41,7 +52,7 @@ async function main() {
 							if (ts__basename === 'index') return
 							const d_ts__basename = basename_(basename, '.d.ts')
 							if (d_ts__basename !== basename) {
-								console.info(`export * from '${basename}'`)
+								console.info(`export * from '${d_ts__basename}'`)
 							} else {
 								console.info(`export * from '${ts__basename}.js'`)
 							}
@@ -58,7 +69,7 @@ async function main() {
 						}
 					}
 				})
-				.on('end', ()=>ret(null))
+			})
 		})
 	}
 }

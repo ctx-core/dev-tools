@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.3
+
+### Patch Changes
+
+- generate-index-ts: fix: output: spawn('ls')&readline: -node-streams
+
 ## 8.1.2
 
 ### Patch Changes
