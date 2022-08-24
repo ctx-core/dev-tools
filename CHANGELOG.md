@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.4
+
+### Patch Changes
+
+- generate-index-ts: fix: ./ prefix
+
 ## 8.1.3
 
 ### Patch Changes

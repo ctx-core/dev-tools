@@ -52,20 +52,20 @@ async function main() {
 							if (ts__basename === 'index') return
 							const d_ts__basename = basename_(basename, '.d.ts')
 							if (d_ts__basename !== basename) {
-								console.info(`export * from '${d_ts__basename}'`)
+								console.info(`export * from './${d_ts__basename}'`)
 							} else {
-								console.info(`export * from '${ts__basename}.js'`)
+								console.info(`export * from './${ts__basename}.js'`)
 							}
 						} else if (extname === '.tsx') {
 							const tsx__basename = basename_(path, '.tsx')
 							if (tsx__basename === 'index') return
-							console.info(`export * from '${tsx__basename}.jsx'`)
+							console.info(`export * from './${tsx__basename}.jsx'`)
 						} else if (extname === '.svelte') {
 							if (!svelte_imported) {
 								svelte_imported = true
 								console.info(`import 'svelte'`)
 							}
-							console.info(`export * from '${basename}'`)
+							console.info(`export * from './${basename}'`)
 						}
 					}
 				})
