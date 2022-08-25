@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.5
+
+### Patch Changes
+
+- fix: readline dependency
+
 ## 8.1.4
 
 ### Patch Changes
