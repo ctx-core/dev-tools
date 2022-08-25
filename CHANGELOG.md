@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.7
+
+### Patch Changes
+
+- directory: append index.js,index.jsx,index.svelte: depending on what is available
+
 ## 8.1.6
 
 ### Patch Changes

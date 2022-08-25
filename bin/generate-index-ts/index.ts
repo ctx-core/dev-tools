@@ -3,7 +3,7 @@ import { chdir } from '@ctx-core/dir'
 import { queue_ } from '@ctx-core/queue'
 import { spawn } from 'child_process'
 import fs from 'fs/promises'
-import { basename as basename_, extname as extname_ } from 'path'
+import { basename as basename_, extname as extname_, join } from 'path'
 import * as readline from 'readline'
 const params = param_r_(process.argv.slice(2), {
 	dir_path_a: '-d, --dir',
@@ -44,7 +44,23 @@ async function main() {
 					const stat = await fs.stat(path)
 					const basename = basename_(path)
 					if (stat.isDirectory()) {
-						console.info(`export * from './${basename}'`)
+						if (
+							await fs.stat(join(dir_path, basename, 'index.ts')).then($=>$.isFile())
+							|| await fs.stat(join(dir_path, basename, 'index.js')).then($=>$.isFile())
+						) {
+							console.info(`export * from './${basename}/index.js'`)
+						} else if (
+							await fs.stat(join(dir_path, basename, 'index.tsx')).then($=>$.isFile())
+							|| await fs.stat(join(dir_path, basename, 'index.jsx')).then($=>$.isFile())
+						) {
+							console.info(`export * from './${basename}/index.jsx'`)
+						} else if (
+							await fs.stat(join(dir_path, basename, 'index.svelte')).then($=>$.isFile())
+						) {
+							console.info(`export * from './${basename}/index.svelte'`)
+						} else {
+							console.info(`export * from './${basename}'`)
+						}
 					} else if (stat.isFile()) {
 						const ts__basename = basename_(basename, '.ts')
 						const extname = extname_(path)
