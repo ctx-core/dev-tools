@@ -4,7 +4,7 @@ import { queue_ } from '@ctx-core/queue'
 import { spawn } from 'child_process'
 import fs from 'fs/promises'
 import { basename as basename_, extname as extname_ } from 'path'
-import * as readline from 'readline/promises'
+import * as readline from 'readline'
 const params = param_r_(process.argv.slice(2), {
 	dir_path_a: '-d, --dir',
 	help: '-h, --help',

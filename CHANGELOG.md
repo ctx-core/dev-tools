@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.6
+
+### Patch Changes
+
+- readlines usage
+
 ## 8.1.5
 
 ### Patch Changes
