@@ -65,8 +65,8 @@ async function main() {
 						const ts__basename = basename_(basename, '.ts')
 						const extname = extname_(path)
 						if (ts__basename !== basename) {
-							if (ts__basename === 'index') return
 							const d_ts__basename = basename_(basename, '.d.ts')
+							if (ts__basename === 'index' || d_ts__basename === 'index') return
 							if (d_ts__basename !== basename) {
 								console.info(`export * from './${d_ts__basename}'`)
 							} else {

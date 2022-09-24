@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.9
+
+### Patch Changes
+
+- generate-index-ts: fix: exclude import 'index': triggered by index.d.ts
+
 ## 8.1.8
 
 ### Patch Changes
