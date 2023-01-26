@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.22
+
+### Patch Changes
+
+- tslib: ^2.4.1 -> ^2.5.0
+
 ## 8.1.21
 
 ### Patch Changes
