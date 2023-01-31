@@ -1,5 +1,15 @@
 # @ctx-core/dev-tools
 
+## 8.1.23
+
+### Patch Changes
+
+- tsconfig.json: - importsNotUsedAsValues
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.62
+  - @ctx-core/dir@8.1.3
+  - @ctx-core/queue@7.3.3
+
 ## 8.1.22
 
 ### Patch Changes
