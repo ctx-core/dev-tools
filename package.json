@@ -45,7 +45,7 @@
 	"devDependencies": {
 		"@types/glob-stream": "^6.1.1",
 		"c8": "^7.12.0",
-		"check-dts": "^0.6.7",
+		"check-dts": "^0.7.0",
 		"tslib": "^2.5.0",
 		"typescript": "next",
 		"uvu": "^0.5.6"
