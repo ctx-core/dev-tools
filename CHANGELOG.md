@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.44
+
+### Patch Changes
+
+- @ctx-core/cli-args: ^11.1.10 -> ^11.1.11
+
 ## 8.1.43
 
 ### Patch Changes
