@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.66
+
+### Patch Changes
+
+- @ctx-core/dir: ^8.1.20 -> ^8.1.21
+
 ## 8.1.65
 
 ### Patch Changes
