@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "8.1.92",
+	"version": "8.1.93",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -43,7 +43,7 @@
 		"tsx": "^3.12.6"
 	},
 	"devDependencies": {
-		"@types/glob-stream": "^6.1.1",
+		"@types/glob-stream": "^6.1.2",
 		"c8": "^7.13.0",
 		"check-dts": "^0.7.1",
 		"tslib": "^2.5.0",

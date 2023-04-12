@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.93
+
+### Patch Changes
+
+- @types/glob-stream: ^6.1.1 -> ^6.1.2
+
 ## 8.1.92
 
 ### Patch Changes
