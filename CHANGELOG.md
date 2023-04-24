@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.1.118
+
+### Patch Changes
+
+- @ctx-core/queue: ^7.7.1 -> ^7.8.0
+
 ## 8.1.117
 
 ### Patch Changes
