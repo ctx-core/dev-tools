@@ -43,7 +43,7 @@
 		"tsx": "^3.12.7"
 	},
 	"devDependencies": {
-		"@types/glob-stream": "^6.1.2",
+		"@types/glob-stream": "^8.0.0",
 		"c8": "^7.13.0",
 		"check-dts": "^0.7.2",
 		"tslib": "^2.5.0",
