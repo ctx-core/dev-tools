@@ -1,5 +1,18 @@
 # @ctx-core/dev-tools
 
+## 8.1.175
+
+### Patch Changes
+
+- @types/glob-stream: ^8.0.0 -> ^8.0.1
+- tsx: ^3.13.0 -> ^3.14.0
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/queue@7.9.3
+  - @ctx-core/cli-args@11.3.42
+  - @ctx-core/dir@8.1.116
+
 ## 8.1.174
 
 ### Patch Changes
