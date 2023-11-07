@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 8.1.183
+
+### Patch Changes
+
+- @types/glob-stream: ^8.0.1 -> ^8.0.2
+- Updated dependencies
+  - @ctx-core/queue@7.9.5
+
 ## 8.1.182
 
 ### Patch Changes
