@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "8.1.186",
+	"version": "8.2.0",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -17,13 +17,16 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
-	"types": "./src/index.d.ts",
-	"svelte": "./src/index.js",
+	"files": [
+		"*.d.ts",
+		"./bin"
+	],
+	"types": "./index.d.ts",
 	"bin": {
 		"generate-index-ts": "./bin/generate-index-ts/index.sh"
 	},
 	"exports": {
-		".": "./src/index.js",
+		".": "./index.js",
 		"./package.json": "./package.json"
 	},
 	"scripts": {
@@ -36,9 +39,9 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "^11.3.46",
-		"@ctx-core/dir": "^8.1.125",
-		"@ctx-core/queue": "^7.9.5",
+		"@ctx-core/cli-args": "^11.4.0",
+		"@ctx-core/dir": "^8.2.0",
+		"@ctx-core/queue": "^7.10.0",
 		"readline": "^1.3.0",
 		"tsx": "^4.0.0"
 	},

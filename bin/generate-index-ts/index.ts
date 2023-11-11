@@ -2,7 +2,7 @@ import { param_r_ } from '@ctx-core/cli-args'
 import { chdir } from '@ctx-core/dir'
 import { queue_ } from '@ctx-core/queue'
 import { spawn } from 'child_process'
-import fs from 'fs/promises'
+import * as fs from 'fs/promises'
 import { basename as basename_, extname as extname_, join } from 'path'
 import * as readline from 'readline'
 const params = param_r_(process.argv.slice(2), {
