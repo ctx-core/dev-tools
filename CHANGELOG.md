@@ -1,5 +1,15 @@
 # @ctx-core/dev-tools
 
+## 8.2.3
+
+### Patch Changes
+
+- package.json: files: + \*.js
+- Updated dependencies
+  - @ctx-core/cli-args@11.4.3
+  - @ctx-core/dir@8.2.3
+  - @ctx-core/queue@7.10.3
+
 ## 8.2.2
 
 ### Patch Changes
