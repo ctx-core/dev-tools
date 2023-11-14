@@ -1,5 +1,15 @@
 # @ctx-core/dev-tools
 
+## 8.2.2
+
+### Patch Changes
+
+- fix: missing tsconfig.json
+- Updated dependencies
+  - @ctx-core/cli-args@11.4.2
+  - @ctx-core/dir@8.2.2
+  - @ctx-core/queue@7.10.2
+
 ## 8.2.1
 
 ### Patch Changes
