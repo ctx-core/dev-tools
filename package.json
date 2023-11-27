@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "8.2.48",
+	"version": "8.2.49",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -41,9 +41,9 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "^11.4.31",
+		"@ctx-core/cli-args": "^11.4.32",
 		"@ctx-core/dir": "^8.2.33",
-		"@ctx-core/queue": "^7.10.31",
+		"@ctx-core/queue": "^7.10.32",
 		"readline": "^1.3.0",
 		"tsx": "^4.5.0"
 	},
