@@ -1,5 +1,15 @@
 # @ctx-core/dev-tools
 
+## 8.2.84
+
+### Patch Changes
+
+- @ctx-core/queue: ^7.10.50 -> ^7.10.51
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/cli-args@11.4.51
+
 ## 8.2.83
 
 ### Patch Changes
