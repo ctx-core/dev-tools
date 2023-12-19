@@ -1,5 +1,15 @@
 # @ctx-core/dev-tools
 
+## 8.2.94
+
+### Patch Changes
+
+- consolidate dependencies
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@5.1.0
+  - @ctx-core/cli-args@11.4.56
+
 ## 8.2.93
 
 ### Patch Changes
