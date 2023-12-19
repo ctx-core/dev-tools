@@ -1,5 +1,14 @@
 # @ctx-core/dev-tools
 
+## 8.2.95
+
+### Patch Changes
+
+- tsx: ^4.6.2 -> ^4.7.0
+- Updated dependencies
+  - @ctx-core/cli-args@11.4.57
+  - @ctx-core/dir@8.2.60
+
 ## 8.2.94
 
 ### Patch Changes
