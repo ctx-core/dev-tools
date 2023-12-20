@@ -1,5 +1,5 @@
-import { param_r_ } from '@ctx-core/cli-args'
 import { chdir } from '@ctx-core/dir'
+import { param_r_ } from 'ctx-core/cli-args'
 import { spawn } from 'child_process'
 import { queue_ } from 'ctx-core/queue'
 import * as fs from 'fs/promises'
