@@ -1,5 +1,15 @@
 # @ctx-core/dev-tools
 
+## 8.2.105
+
+### Patch Changes
+
+- ctx-core: ^5.5.0 -> ^5.6.0
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/dir@8.2.70
+  - ctx-core@5.6.1
+
 ## 8.2.104
 
 ### Patch Changes
