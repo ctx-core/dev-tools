@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 8.2.127
+
+### Patch Changes
+
+- import nodejs core modules using node: prefix
+- Updated dependencies
+  - ctx-core@5.18.8
+
 ## 8.2.126
 
 ### Patch Changes

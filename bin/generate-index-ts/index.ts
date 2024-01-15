@@ -1,9 +1,9 @@
 import { chdir } from '@ctx-core/dir'
 import { param_r_ } from 'ctx-core/cli-args'
-import { spawn } from 'child_process'
+import { spawn } from 'node:child_process'
 import { queue_ } from 'ctx-core/queue'
-import * as fs from 'fs/promises'
-import { basename as basename_, extname as extname_, join } from 'path'
+import * as fs from 'node:fs/promises'
+import { basename as basename_, extname as extname_, join } from 'node:path'
 import * as readline from 'readline'
 const params = param_r_(process.argv.slice(2), {
 	dir_path_a: '-d, --dir',
