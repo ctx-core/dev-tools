@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.3.1
+
+### Patch Changes
+
+- generate-index-js: fix: locking up window system on linux
+
 ## 8.3.0
 
 ### Minor Changes
