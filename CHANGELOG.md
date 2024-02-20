@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.3.2
+
+### Patch Changes
+
+- generate-index-js: fix: write contents of entire directory onto the console
+
 ## 8.3.1
 
 ### Patch Changes

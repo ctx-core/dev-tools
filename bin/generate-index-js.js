@@ -21,8 +21,13 @@ if (params.help) {
 }
 const dir_path = params.dir_path_a?.[0]
 if (!dir_path) throw `-d, --dir is missing`
-chdir(dir_path, main).then()
-async function main() {
+chdir(dir_path, main)
+	.then(()=>process.exit(0))
+	.catch(err=>{
+		console.error(err)
+		process.exit(1)
+	})
+function main() {
 	let svelte_imported = false
 	for (const path of readdirSync(dir_path)) {
 		const stat = statSync(path)
@@ -50,7 +55,7 @@ async function main() {
 			const extname = extname_(path)
 			if (ts__basename !== basename) {
 				const d_ts__basename = basename_(basename, '.d.ts')
-				if (ts__basename === 'index' || d_ts__basename === 'index') return
+				if (ts__basename === 'index' || d_ts__basename === 'index') continue
 				if (d_ts__basename !== basename) {
 					console.info(`export * from './${d_ts__basename}'`)
 				} else {
@@ -58,7 +63,7 @@ async function main() {
 				}
 			} else if (extname === '.tsx') {
 				const tsx__basename = basename_(path, '.tsx')
-				if (tsx__basename === 'index') return
+				if (tsx__basename === 'index') continue
 				console.info(`export * from './${tsx__basename}.jsx'`)
 			} else if (extname === '.svelte') {
 				if (!svelte_imported) {
