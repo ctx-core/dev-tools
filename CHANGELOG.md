@@ -1,5 +1,11 @@
 # @ctx-core/dev-tools
 
+## 8.3.0
+
+### Minor Changes
+
+- generate-index-ts→generate-index-js: fix: load issue using bunjs
+
 ## 8.2.180
 
 ### Patch Changes

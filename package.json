@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/dev-tools",
-	"version": "8.2.180",
+	"version": "8.3.0",
 	"description": "ctx-core dev-tools",
 	"keywords": [
 		"ctx-core",
@@ -25,7 +25,7 @@
 	],
 	"types": "./index.d.ts",
 	"bin": {
-		"generate-index-ts": "./bin/generate-index-ts/index.sh"
+		"generate-index-js": "./bin/generate-index-js.js"
 	},
 	"exports": {
 		".": "./index.js",
