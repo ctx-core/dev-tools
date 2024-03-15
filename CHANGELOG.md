@@ -1,5 +1,13 @@
 # @ctx-core/dev-tools
 
+## 8.3.14
+
+### Patch Changes
+
+- ctx-core: ^6.5.7 -> ^6.5.8
+- Updated dependencies
+  - @ctx-core/dir@8.2.156
+
 ## 8.3.13
 
 ### Patch Changes
