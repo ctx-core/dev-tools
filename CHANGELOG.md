@@ -1,5 +1,14 @@
 # @ctx-core/dev-tools
 
+## 8.3.18
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - ctx-core@6.6.1
+  - @ctx-core/dir@8.2.160
+
 ## 8.3.17
 
 ### Patch Changes
