@@ -49,7 +49,7 @@
 		"@ctx-core/dir": "^8.2.181",
 		"ctx-core": "^7.2.3",
 		"readline": "^1.3.0",
-		"tsx": "^4.9.0"
+		"tsx": "^4.9.1"
 	},
 	"devDependencies": {
 		"@types/glob-stream": "^8.0.2",
