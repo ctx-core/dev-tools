@@ -46,14 +46,14 @@
 		"disable:test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"@ctx-core/dir": "^8.2.209",
-		"ctx-core": "^7.2.32",
+		"@ctx-core/dir": "*",
+		"ctx-core": "*",
 		"readline": "^1.3.0",
-		"tsx": "^4.19.0"
+		"tsx": "^4.20.6"
 	},
 	"devDependencies": {
-		"@types/glob-stream": "^8.0.2",
-		"c8": "^10.1.2",
+		"@types/glob-stream": "^8.0.3",
+		"c8": "^10.1.3",
 		"check-dts": "^0.8.2",
 		"typescript": "next",
 		"uvu": "^0.5.6"
