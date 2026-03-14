@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 import { chdir } from '@ctx-core/dir'
 import { param_r_ } from 'ctx-core/cli-args'
-import { readdirSync, statSync } from 'node:fs'
+import { existsSync, readdirSync, statSync } from 'node:fs'
 import { basename as basename_, extname as extname_, join } from 'node:path'
 const params = param_r_(process.argv.slice(2), {
 	dir_path_a: '-d, --dir',
 	help: '-h, --help',
 })
 const cli_help_ = ()=>`
-generate-index-ts -d ./path/to/dir
+generate-index-js -d ./path/to/dir
 
 Options:
 
@@ -29,22 +29,22 @@ chdir(dir_path, main)
 	})
 function main() {
 	let svelte_imported = false
-	for (const path of readdirSync(dir_path)) {
+	for (const path of readdirSync('.')) {
 		const stat = statSync(path)
 		const basename = basename_(path)
 		if (stat.isDirectory()) {
 			if (
-				statSync(join(dir_path, basename, 'index.ts')).then($=>$.isFile())
-				|| statSync(join(dir_path, basename, 'index.js')).then($=>$.isFile())
+				existsSync(join(basename, 'index.ts'))
+				|| existsSync(join(basename, 'index.js'))
 			) {
 				console.info(`export * from './${basename}/index.js'`)
 			} else if (
-				statSync(join(dir_path, basename, 'index.tsx')).then($=>$.isFile())
-				|| statSync(join(dir_path, basename, 'index.jsx')).then($=>$.isFile())
+				existsSync(join(basename, 'index.tsx'))
+				|| existsSync(join(basename, 'index.jsx'))
 			) {
 				console.info(`export * from './${basename}/index.jsx'`)
 			} else if (
-				statSync(join(dir_path, basename, 'index.svelte')).then($=>$.isFile())
+				existsSync(join(basename, 'index.svelte'))
 			) {
 				console.info(`export * from './${basename}/index.svelte'`)
 			} else {
@@ -71,6 +71,8 @@ function main() {
 					console.info(`import 'svelte'`)
 				}
 				console.info(`export * from './${basename}'`)
+			} else if (extname === '.md') {
+				console.info(`export * from './${basename}.js'`)
 			}
 		}
 	}
