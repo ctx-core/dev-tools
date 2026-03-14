@@ -72,7 +72,7 @@ function main() {
 				}
 				console.info(`export * from './${basename}'`)
 			} else if (extname === '.md') {
-				console.info(`export * from './${basename}.js'`)
+				console.info(`export * from './${basename}'`)
 			}
 		}
 	}
